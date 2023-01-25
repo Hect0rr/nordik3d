@@ -41,6 +41,12 @@ const infoStyle = {
   gray: {
     color: grayColor
   },
+  etsy: {
+    color: '#F1641E'
+  },
+  blue: {
+    color: '#5468ff'
+  },
   icon: {
     width: "36px",
     height: "36px"

@@ -34,12 +34,12 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand = {<img src='/img/logo.png' width='110px' />}
+        brand={<img src="/img/logo.png" width="110px" />}
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: "white"
+          color: "white",
         }}
         {...rest}
       />
@@ -48,9 +48,7 @@ export default function LandingPage(props) {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Nordik3D</h1>
-              <h4>
-                Faites nous confiance pour vos besoins en impression 3D.
-              </h4>
+              <h4>Faites nous confiance pour vos besoins en impression 3D.</h4>
               <br />
               <Button
                 color="danger"
