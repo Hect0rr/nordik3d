@@ -3,7 +3,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import StoreFrontIcon from "@material-ui/icons/StoreFront";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import ThreeDRotationIcon from "@material-ui/icons/ThreeDRotation";
 import Button from "/components/CustomButtons/Button.js";
 // core components
@@ -34,7 +34,7 @@ export default function ProductSection() {
           <GridItem xs={6}>
             <InfoArea
               title=""
-              icon={StoreFrontIcon}
+              icon={ShoppingCartIcon}
               iconColor="etsy"
               vertical
             />
