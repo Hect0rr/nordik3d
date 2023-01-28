@@ -21,7 +21,6 @@ export default function WorkSection() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current);
     emailjs
       .sendForm(
         "service_nxxvafs",
@@ -29,18 +28,9 @@ export default function WorkSection() {
         form.current,
         "pF6cJq8J8HDnmuEm5"
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
   };
   const validate = (values) => {
     const errors = {};
-    console.log(values.email)
     if (!values.email) {
       errors.email = "Required";
     } else if (
@@ -62,7 +52,7 @@ export default function WorkSection() {
   });
 
   return (
-    <div className={classes.section}>
+    <div id="votre_design" className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>Votre design</h2>
@@ -84,15 +74,16 @@ export default function WorkSection() {
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText={
-                    formik.touched.email &&
-                    formik.errors.email && <span>{formik.errors.email}</span> || <span>Email</span>
+                    (formik.touched.email && formik.errors.email && (
+                      <span>{formik.errors.email}</span>
+                    )) || <span>Email</span>
                   }
                   id="email"
                   type="email"
                   inputProps={{
-                    id:"email",
-                    name:"email",
-                    type:"email",
+                    id: "email",
+                    name: "email",
+                    type: "email",
                     onChange: formik.handleChange,
                     onBlur: formik.handleBlur,
                     value: formik.values.email,
@@ -102,6 +93,13 @@ export default function WorkSection() {
                   }}
                 ></CustomInput>
               </GridItem>
+              <GridItem>
+                <Button color="primary" variant="contained" component="label">
+                  Upload
+                  <input hidden accept=".stl" type="file" />
+                </Button>
+              </GridItem>
+
               <CustomInput
                 labelText="Description"
                 id="description"
@@ -116,7 +114,7 @@ export default function WorkSection() {
               />
               <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
                 <Button type="submit" color="primary">
-                  Send Message
+                  Envoyer
                 </Button>
               </GridItem>
             </GridContainer>

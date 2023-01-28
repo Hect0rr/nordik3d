@@ -34,6 +34,7 @@ export default function ProductSection() {
           <GridItem xs={6}>
             <InfoArea
               title=""
+              description=""
               icon={ShoppingCartIcon}
               iconColor="etsy"
               vertical
@@ -45,11 +46,12 @@ export default function ProductSection() {
           <GridItem xs={6}>
             <InfoArea
               title=""
+              description=""
               icon={ThreeDRotationIcon}
               iconColor="blue"
               vertical
             />
-            <Button size="lg" color="blue">
+            <Button size="lg" color="blue" href="#votre_design">
               Votre design
             </Button>
           </GridItem>
