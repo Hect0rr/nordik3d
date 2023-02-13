@@ -82,7 +82,7 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>Nordik 3D</title>
+          <title>Kanuck 3D</title>
         </Head>
         <Component {...pageProps} />
       </React.Fragment>

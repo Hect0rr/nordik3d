@@ -55,10 +55,9 @@ export default function WorkSection() {
     <div id="votre_design" className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Votre design</h2>
+          <h2 className={classes.title}>Informations</h2>
           <h4 className={classes.description}>
-            Envoyez nous un fichier au format stl et nous vous réponderons avec
-            un estimé des coûts dans les prochaines 24h.
+            Contactez nous pour obtenir plus d'informations.
           </h4>
           <form ref={form} onSubmit={sendEmail}>
             <GridContainer>
@@ -93,13 +92,6 @@ export default function WorkSection() {
                   }}
                 ></CustomInput>
               </GridItem>
-              <GridItem>
-                <Button color="primary" variant="contained" component="label">
-                  Upload
-                  <input hidden accept=".stl" type="file" />
-                </Button>
-              </GridItem>
-
               <CustomInput
                 labelText="Description"
                 id="description"
