@@ -39,7 +39,11 @@ export default function ProductSection() {
               iconColor="etsy"
               vertical
             />
-            <Button size="lg" color="etsy">
+            <Button
+              size="lg"
+              color="etsy"
+              href="https://www.etsy.com/shop/Kanuck3DStore"
+            >
               Accéder à la boutique ETSY
             </Button>
           </GridItem>
