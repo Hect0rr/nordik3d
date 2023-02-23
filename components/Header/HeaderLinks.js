@@ -19,7 +19,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
-          href=""
+          href="https://www.etsy.com/shop/Kanuck3DStore"
           color="etsy"
           target="_blank"
           className={classes.navLink}
