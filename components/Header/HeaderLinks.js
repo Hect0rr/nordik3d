@@ -27,7 +27,7 @@ export default function HeaderLinks(props) {
            Allez à la boutique
         </Button>
       </ListItem>
-      {/* <ListItem className={classes.listItem}>
+       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
           title="Follow us on facebook"
@@ -36,7 +36,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href=""
+            href="https://www.facebook.com/profile.php?id=100089948365719"
             target="_blank"
             className={classes.navLink}
           >
@@ -44,7 +44,7 @@ export default function HeaderLinks(props) {
           </Button>
         </Tooltip>
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/*<ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
           title="Follow us on instagram"
