@@ -55,7 +55,7 @@ export default function ProductSection() {
               iconColor="blue"
               vertical
             />
-            <Button size="lg" color="blue" href="#votre_design">
+            <Button size="lg" color="blue" href="https://www.etsy.com/ca-fr/conversations/new?with_id=759560717&ref=shop_contact_items">
               Votre design
             </Button>
           </GridItem>
