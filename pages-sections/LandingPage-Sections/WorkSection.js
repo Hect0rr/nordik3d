@@ -57,7 +57,7 @@ export default function WorkSection() {
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>Informations</h2>
           <h4 className={classes.description}>
-            Contactez nous pour obtenir plus d'informations.
+            Contactez nous pour obtenir plus d'informations ou pour nous soumettre une demande d'impression.
           </h4>
           <form ref={form} onSubmit={sendEmail}>
             <GridContainer>
